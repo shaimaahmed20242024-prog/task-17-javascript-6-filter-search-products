@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <title>cards</title>
+    <link rel="stylesheet" type="text/css" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/bootstrap.min.css">
+
+</head>
+
+<body>
+    <header class="container mb-5">
+        <nav class="d-flex justify-content-between pt-3">
+            <div class="title">
+                <h1>our products</h1>
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="6" viewBox="0 0 100 6" fill="none">
+                    <path
+                        d="M0 3C0 1.34315 1.34315 0 3 0H97C98.6569 0 100 1.34315 100 3C100 4.65685 98.6569 6 97 6H3C1.34314 6 0 4.65685 0 3Z"
+                        fill="#007BFF" />
+                </svg>
+            </div>
+            <div class="indicators d-flex gap-4">
+                <div class="cart-indicator">
+                    <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                    <svg class="position-relative" fill="#000000" width="40px" height="40px" viewBox="0 0 24 24"
+                        id="cart-add" data-name="Line Color" xmlns="http://www.w3.org/2000/svg" class="icon line-color">
+                        <path id="secondary-upstroke" d="M11,20.5h.1m5.9,0h.1"
+                            style="fill: none; stroke: rgb(44, 169, 188); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;">
+                        </path>
+                        <path id="secondary" d="M14,5v6m3-3H11"
+                            style="fill: none; stroke: rgb(44, 169, 188); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;">
+                        </path>
+                        <path id="primary"
+                            d="M3,3H5.2a1,1,0,0,1,1,.78L8.82,15.22a1,1,0,0,0,1,.78h8.42a1,1,0,0,0,1-.76L21,8"
+                            style="fill: none; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;">
+                        </path>
+                    </svg>
+                    <span class="card-indicator badge bg-primary position-absolute rounded-pill"></span>
+                </div>
+                <div class="wishlist">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path
+                            d="M5.56335 17.3853L14.3153 25.6068C14.6398 25.9116 14.802 26.064 15 26.064C15.198 26.064 15.3602 25.9116 15.6847 25.6068L15.6847 25.6068L24.4367 17.3853C26.8819 15.0882 27.1788 11.3082 25.1223 8.65758L24.7356 8.15918C22.2753 4.98822 17.337 5.52002 15.6083 9.14206C15.3641 9.6537 14.6359 9.6537 14.3917 9.14206C12.663 5.52002 7.72465 4.98823 5.26443 8.15918L4.87773 8.65759C2.82118 11.3083 3.11813 15.0882 5.56335 17.3853Z"
+                            stroke="#007BFF" stroke-width="2" />
+                    </svg>
+                    <span class="wishlist-indicator badge bg-primary position-absolute rounded-pill"></span>
+                </div>
+            </div>
+
+        </nav>
+
+    </header>
+    <section class="search container d-flex gap-2 mb-3">
+        <div class="validation d-flex flex-column flex-grow-1 gap-2" > 
+            <input type="text" placeholder="search" class="search-input" style="height: 38px;">
+            <span class="search-valid text-danger"></span>
+        </div>
+        <button class="search-btn btn btn-primary rounded-2"style="height: 38px;">search</button>
+    </section>
+    <section class="filter container  mb-3">
+        <div class="min d-flex flex-column gap-2">
+            <input type="text" placeholder="minimum price" class="min-price-input" style="height: 38px;">
+            <span class="enter-min-price text-danger"></span>
+        </div>
+        <div class="max d-flex flex-column gap-2">
+            <input type="text" placeholder="maximum price" class="max-price-input " style="height: 38px;">
+            <span class="enter-max-price text-danger"></span>
+        </div>
+        <button class="filter-btn btn btn-primary rounded-2 align-items-center" style="height: 38px;">filter</button>
+    </section>
+    <section class="products container">
+        <div class="row  ">
+         
+        </div>
+    </section>
+
+    <script src="./assets/scripts/script.js"></script>
+
+</body>
+
+</html>
