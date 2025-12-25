@@ -201,10 +201,11 @@ filterBtn.addEventListener("click", function () {
         return
 
     }
+     //filter
     const filteredItems = products.filter(product => {
         return product.price_after_sale >= minPricevalue && product.price_after_sale <= maxPricevalue
     })
-    //filter
+   
     console.log(filteredItems)
     productsContainer.innerHTML = ""
     //min&maxvalidation
@@ -224,7 +225,7 @@ const addToCart = (id) => {
     cartProducts.push(id)
     console.log(cartProducts)
     cardIndicator.textContent = cartProducts.length
-    displayProducts()
+    displayProducts(products)
 }
 
 const removeFromCart = (id) => {
@@ -239,14 +240,14 @@ const removeFromCart = (id) => {
         return
     cartProducts.splice(indexToRemove, 1)
     cardIndicator.textContent = cartProducts.length
-    displayProducts()
+    displayProducts(products)
 }
 const wishList = []
 const addToWishList = (id) => {
     wishList.push(id)
 
     wishlistIndicator.textContent = wishList.length
-    displayProducts()
+    displayProducts(products)
 }
 const removeFromWishList = (id) => {
     console.log("wishList")
@@ -261,7 +262,7 @@ const removeFromWishList = (id) => {
         return
     wishList.splice(indexToRemove, 1)
     wishlistIndicator.textContent = wishList.length
-    displayProducts()
+    displayProducts(products)
 }
 //display products
 const displayProducts = (array) => {
